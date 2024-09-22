@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     try {
-      const response = await api.post("/login", credentials);
+      const response = await api.post("users/login", credentials);
 
       // Check if response is in JSON format and has expected fields
       if (response.headers["content-type"]?.includes("application/json")) {
@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (data) => {
     try {
-      const response = await api.post("/signup", data);
+      const response = await api.post("users/signup", data);
 
       // Check if response is in JSON format and has expected fields
       if (response.headers["content-type"]?.includes("application/json")) {

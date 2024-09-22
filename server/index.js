@@ -15,6 +15,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("<h1> Yo! </h1>");
+});
 app.use("/api/users", userRoutes);
 app.use("/api/todos", todoRoutes);
 
