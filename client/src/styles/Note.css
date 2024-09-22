@@ -1,0 +1,63 @@
+.note {
+  background: #022c6b;
+  border-radius: 7px;
+  padding: 15px; /* Increased padding to provide more space inside the note */
+  width: 240px;
+  margin: 16px;
+  float: left;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.3);
+  color: #e4b016;
+}
+
+.note-complete {
+  background: #333; /* Change background color for complete notes */
+  text-decoration: line-through;
+  font-style: italic;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note input,
+.note textarea {
+  width: calc(
+    100% - 20px
+  ); /* Reduce width slightly to provide space around the edges */
+  margin-bottom: 10px;
+  padding: 8px; /* Increased padding for a cleaner look */
+  font-size: 1em;
+  border: 1px solid #ccc; /* Optional: Add a light border for better definition */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-sizing: border-box; /* Ensures padding does not affect overall width */
+}
+
+.note button {
+  position: relative;
+  margin-right: 10px;
+  color: #9933ff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+.del-btn,
+.check-btn {
+  float: right;
+}
+
+.edit-btn,
+.save-btn {
+  float: left;
+}

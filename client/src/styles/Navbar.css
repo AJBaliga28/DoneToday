@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #ffc107; /* Updated to match the main app theme */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar h2 {
+  margin: 0;
+  color: #2f4f7f; /* Updated heading color */
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.acc-btn,
+.login-btn {
+  color: #2f4f7f; /* Updated button color */
+  transition: color 0.3s ease;
+  margin-left: 10px; /* Added margin for spacing */
+}
+
+.acc-btn:hover,
+.login-btn:hover {
+  color: #f14a07; /* Slightly darker shade on hover */
+}
+
+.dropdown-content {
+  display: none; /* Dropdown hidden by default */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

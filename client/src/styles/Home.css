@@ -1,0 +1,42 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  /* background-color: #2f4f7f;  */
+  color: #ffc107; /* Text color */
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.home-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.home-para {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.call-to-action {
+  font-size: 1.2rem; /* Increase the size of the signup/login text */
+  margin-top: 20px; /* Add some space above the links */
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: #ffc107; /* Change link color to match app theme */
+  margin: 0 5px; /* Add margin for spacing between links */
+}
+
+a:hover {
+  color: #fff; /* Change link color on hover */
+}

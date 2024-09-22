@@ -4,7 +4,9 @@ const Todo = require("../models/Todo");
 // Get all todos for the authenticated user
 exports.getTodos = async (req, res) => {
   try {
+    console.log(req);
     const todos = await Todo.find({ user: req.user.id });
+    console.log(todos);
     res.json(todos);
   } catch (error) {
     res.status(500).json({ message: "Server error" });

@@ -1,0 +1,27 @@
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #324a71; /* Softer navy blue for the footer background */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #eee0ce; /* Soft warm beige for text color */
+}
+
+.footer-para {
+  margin-top: 10px; /* Adjusted margin for consistent spacing */
+}
+
+.github-link {
+  text-decoration: none;
+  color: #e3a25c; /* Soft muted orange for links */
+}
+
+.github-link:hover {
+  text-decoration: underline;
+  color: #d58944; /* Deeper muted orange on hover */
+}
+
+hr {
+  border-color: #e3a25c; /* Muted orange to match the link color */
+}

@@ -1,0 +1,81 @@
+/* Common styles for both login and signup components */
+.login-container,
+.signup-container {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin: auto; /* Center the div */
+
+  color: white; /* Consistent text color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: absolute; /* Enable absolute positioning */
+  top: 50%; /* Move down 50% of the viewport height */
+  left: 50%; /* Move right 50% of the viewport width */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  max-width: 600px; /* Keep the max width */
+  width: 90%; /* Allow it to be responsive */
+}
+
+.heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffc107; /* Consistent heading color */
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffc107; /* Consistent label color */
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  border: none;
+  color: #fff;
+  background-color: #ffc107; /* Updated button color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #e0a800; /* Darkened button color on hover */
+}
+
+.connecting-para {
+  margin-top: 20px;
+  color: #ffc107; /* Updated link color */
+  text-align: center;
+}
+
+.connecting-para a {
+  text-decoration: none;
+  color: #ffc107; /* Updated link color */
+}
+
+.connecting-para a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  margin-top: 10px; /* Add some space above the error message */
+  padding: 10px;
+  border-radius: 4px;
+  color: #dc3545; /* Red color for error */
+  background-color: #f8d7da; /* Light red background */
+}

@@ -1,0 +1,40 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  /* background-color: #2f4f7f;  */
+  color: #ffc107; /* Text color */
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.not-found-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.not-found-container p {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.home-link {
+  font-size: 1.1rem;
+  color: #ffc107; /* Consistent link color */
+  text-decoration: none;
+  border: 2px solid #ffc107; /* Button-like appearance */
+  padding: 10px 20px; /* Padding for button feel */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.link-home:hover {
+  background-color: #ffc107; /* Highlight color */
+  color: #2f4f7f; /* Change text color on hover */
+}
