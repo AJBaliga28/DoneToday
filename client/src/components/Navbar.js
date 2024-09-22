@@ -26,6 +26,7 @@ const Navbar = ({ onSearch }) => {
         <Link to="/">
           <FaRegStickyNote size={"1.25em"} className="home-btn" />
         </Link>
+        <span className="app-name">DoneToday</span>
       </h2>
       <div className="auth-buttons">
         {isLoggedIn ? (
