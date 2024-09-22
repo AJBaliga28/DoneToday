@@ -1,3 +1,4 @@
+// Navbar.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaRegStickyNote } from "react-icons/fa";
@@ -22,21 +23,19 @@ const Navbar = ({ onSearch }) => {
 
   return (
     <nav className="navbar">
-      <h2>
-        <Link to="/">
+      <div className="navbar-brand">
+        <Link to="/" className="home-link">
           <FaRegStickyNote size={"1.25em"} className="home-btn" />
+          <span className="app-name">DoneToday</span>
         </Link>
-        <span className="app-name">DoneToday</span>
-      </h2>
+      </div>
       <div className="auth-buttons">
         {isLoggedIn ? (
-          <>
-            <div className="dropdown">
-              <Link to="#" className="login-btn" onClick={handleLogout}>
-                <FiLogIn size={"2em"} />
-              </Link>
-            </div>
-          </>
+          <div className="dropdown">
+            <Link to="#" className="login-btn" onClick={handleLogout}>
+              <FiLogIn size={"2em"} />
+            </Link>
+          </div>
         ) : (
           <Link to="/login">
             <MdAccountCircle size={"1.25em"} className="acc-btn" />

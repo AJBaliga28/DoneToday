@@ -1,3 +1,4 @@
+/* Navbar.css */
 .navbar {
   background-color: #ffc107; /* Updated to match the main app theme */
   padding: 10px;
@@ -7,24 +8,32 @@
   border-bottom: 1px solid #ddd;
 }
 
-.navbar h2 {
-  margin: 0;
-  color: #2f4f7f; /* Updated heading color */
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
-.app-name {
-  font-size: 1.25em; /* Adjust the size to match the icon */
-  font-weight: bold;
-  color: #2f4f7f; /* Consistent color with the icon */
+.home-link {
+  font-size: 1.45em;
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline */
 }
 
 .home-btn {
   color: #2f4f7f; /* Ensures the icon is visible */
   transition: color 0.3s ease;
+  margin-right: 8px; /* Spacing between icon and text */
 }
 
 .home-btn:hover {
   color: #2f4f7f; /* Keep the color the same on hover to avoid turning white */
+}
+
+.app-name {
+  /*font-size: 1.25em;  Adjust the size to match the icon */
+  font-weight: bold;
+  color: #2f4f7f; /* Consistent color with the icon */
 }
 
 .auth-buttons {
