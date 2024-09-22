@@ -12,6 +12,15 @@
   color: #2f4f7f; /* Updated heading color */
 }
 
+.home-btn {
+  color: #2f4f7f; /* Ensures the icon is visible */
+  transition: color 0.3s ease;
+}
+
+.home-btn:hover {
+  color: #2f4f7f; /* Keep the color the same on hover to avoid turning white */
+}
+
 .auth-buttons {
   display: flex;
   align-items: center;
@@ -26,7 +35,7 @@
 
 .acc-btn:hover,
 .login-btn:hover {
-  color: #f14a07; /* Slightly darker shade on hover */
+  color: #f14a07; /* Slightly darker shade on hover for contrast */
 }
 
 .dropdown-content {

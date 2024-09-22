@@ -26,7 +26,7 @@ const Keeper = () => {
     // Fetch token and user once when the component mounts
     const storedToken = localStorage.getItem("token");
     const storedUser = JSON.parse(localStorage.getItem("user"));
-    console.log(storedToken, storedUser);
+    // console.log(storedToken, storedUser);
     if (storedToken) {
       setToken(storedToken);
       // Set the stored user to persist username after reload

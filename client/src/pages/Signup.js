@@ -35,7 +35,6 @@ const Signup = () => {
     }
 
     try {
-      console.log(state);
       await signup(state);
 
       alert("Signup successful!");
